@@ -1,0 +1,1050 @@
+{
+  "contact": {
+    "phone": "+919839525440",
+    "whatsapp": "+919839525440"
+  },
+  "categories": [
+    {
+      "id": "haar",
+      "names": {
+        "en": "Haar / Necklace",
+        "hi": "हार",
+        "hinglish": "Haar"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "mala",
+      "names": {
+        "en": "Mala",
+        "hi": "माला",
+        "hinglish": "Mala"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "necklace",
+      "names": {
+        "en": "Necklace / Choker",
+        "hi": "हार / चोकर",
+        "hinglish": "Haar / Choker"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "chain",
+      "names": {
+        "en": "Chain",
+        "hi": "चेन",
+        "hinglish": "Chain"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "tops",
+      "names": {
+        "en": "Tops",
+        "hi": "टॉप्स",
+        "hinglish": "Tops"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "jhumka",
+      "names": {
+        "en": "Earrings / Jhumka",
+        "hi": "झुमका",
+        "hinglish": "Jhumka"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "bali",
+      "names": {
+        "en": "Hoop Earrings",
+        "hi": "बाली",
+        "hinglish": "Bali"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "chandbali",
+      "names": {
+        "en": "Chandbali",
+        "hi": "चांदबाली",
+        "hinglish": "Chandbali"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "ring",
+      "names": {
+        "en": "Ring",
+        "hi": "अंगूठी",
+        "hinglish": "Anguthi"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "chudi",
+      "names": {
+        "en": "Bangle",
+        "hi": "चूड़ी",
+        "hinglish": "Chudi"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "kangan",
+      "names": {
+        "en": "Bracelet / Kangan",
+        "hi": "कंगन",
+        "hinglish": "Kangan"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "kada",
+      "names": {
+        "en": "Kada",
+        "hi": "कड़ा",
+        "hinglish": "Kada"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "mangalsutra",
+      "names": {
+        "en": "Mangalsutra",
+        "hi": "मंगलसूत्र",
+        "hinglish": "Mangalsutra"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "nath",
+      "names": {
+        "en": "Nose Ring",
+        "hi": "नथ",
+        "hinglish": "Nath"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "nose-pin",
+      "names": {
+        "en": "Nose Pin",
+        "hi": "नोज़ पिन",
+        "hinglish": "Nose Pin"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "locket",
+      "names": {
+        "en": "Locket",
+        "hi": "लॉकेट",
+        "hinglish": "Locket"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "pendant",
+      "names": {
+        "en": "Pendant",
+        "hi": "लॉकेट",
+        "hinglish": "Locket"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "bridal-set",
+      "names": {
+        "en": "Bridal Set",
+        "hi": "ब्राइडल सेट",
+        "hinglish": "Bridal Set"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "maang-tika",
+      "names": {
+        "en": "Maang Tika",
+        "hi": "मांग टीका",
+        "hinglish": "Maang Tika"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "matha-patti",
+      "names": {
+        "en": "Matha Patti",
+        "hi": "माथा पट्टी",
+        "hinglish": "Matha Patti"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "bajubandh",
+      "names": {
+        "en": "Armlet",
+        "hi": "बाजूबंद",
+        "hinglish": "Bajubandh"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "hathphool",
+      "names": {
+        "en": "Hand Ornament",
+        "hi": "हाथफूल",
+        "hinglish": "Hathphool"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "kamarbandh",
+      "names": {
+        "en": "Kamarbandh",
+        "hi": "कमरबंद",
+        "hinglish": "Kamarbandh"
+      },
+      "metals": [
+        "gold"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "payal",
+      "names": {
+        "en": "Anklet",
+        "hi": "पायल",
+        "hinglish": "Payal"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "bichhiya",
+      "names": {
+        "en": "Toe Ring",
+        "hi": "बिछिया",
+        "hinglish": "Bichhiya"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "jodavi",
+      "names": {
+        "en": "Jodavi",
+        "hi": "जोड़वी",
+        "hinglish": "Jodavi"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "bracelet",
+      "names": {
+        "en": "Bracelet",
+        "hi": "कंगन",
+        "hinglish": "Kangan"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "gents",
+      "names": {
+        "en": "Gents Jewellery",
+        "hi": "पुरुषों के आभूषण",
+        "hinglish": "Gents Jewellery"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "ladies",
+      "names": {
+        "en": "Ladies Jewellery",
+        "hi": "महिलाओं के आभूषण",
+        "hinglish": "Ladies Jewellery"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "baby",
+      "names": {
+        "en": "Baby Jewellery",
+        "hi": "बच्चों के आभूषण",
+        "hinglish": "Baby Jewellery"
+      },
+      "metals": [
+        "gold",
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "bridal",
+      "names": {
+        "en": "Bridal Jewellery",
+        "hi": "दुल्हन के आभूषण",
+        "hinglish": "Bridal Jewellery"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "jewellery"
+    },
+    {
+      "id": "lakshmi-coin",
+      "names": {
+        "en": "Lakshmi Coin",
+        "hi": "लक्ष्मी सिक्का",
+        "hinglish": "Lakshmi Coin"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "coins"
+    },
+    {
+      "id": "ganesh-coin",
+      "names": {
+        "en": "Ganesh Coin",
+        "hi": "गणेश सिक्का",
+        "hinglish": "Ganesh Coin"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "coins"
+    },
+    {
+      "id": "om-coin",
+      "names": {
+        "en": "Om Coin",
+        "hi": "ॐ सिक्का",
+        "hinglish": "Om Coin"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "coins"
+    },
+    {
+      "id": "swastik-coin",
+      "names": {
+        "en": "Swastik Coin",
+        "hi": "स्वस्तिक सिक्का",
+        "hinglish": "Swastik Coin"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "coins"
+    },
+    {
+      "id": "plain-coin",
+      "names": {
+        "en": "Plain Silver Coin",
+        "hi": "सादा चांदी का सिक्का",
+        "hinglish": "Plain Silver Coin"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "coins"
+    },
+    {
+      "id": "diya",
+      "names": {
+        "en": "Diya",
+        "hi": "दीया",
+        "hinglish": "Diya"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "pooja"
+    },
+    {
+      "id": "lota",
+      "names": {
+        "en": "Lota",
+        "hi": "लोटा",
+        "hinglish": "Lota"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "pooja"
+    },
+    {
+      "id": "kalash",
+      "names": {
+        "en": "Kalash",
+        "hi": "कलश",
+        "hinglish": "Kalash"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "pooja"
+    },
+    {
+      "id": "bell",
+      "names": {
+        "en": "Bell",
+        "hi": "घंटी",
+        "hinglish": "Ghanti"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "pooja"
+    },
+    {
+      "id": "thali",
+      "names": {
+        "en": "Pooja Thali",
+        "hi": "पूजा थाली",
+        "hinglish": "Pooja Thali"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "pooja"
+    },
+    {
+      "id": "pooja-set",
+      "names": {
+        "en": "Pooja Set",
+        "hi": "पूजा सेट",
+        "hinglish": "Pooja Set"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "pooja"
+    },
+    {
+      "id": "idols",
+      "names": {
+        "en": "Idols",
+        "hi": "मूर्तियां",
+        "hinglish": "Moortiyan"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "pooja"
+    },
+    {
+      "id": "glass",
+      "names": {
+        "en": "Glass",
+        "hi": "गिलास",
+        "hinglish": "Glass"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "bartan"
+    },
+    {
+      "id": "bowl",
+      "names": {
+        "en": "Bowl",
+        "hi": "कटोरा",
+        "hinglish": "Katora"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "bartan"
+    },
+    {
+      "id": "katori",
+      "names": {
+        "en": "Katori",
+        "hi": "कटोरी",
+        "hinglish": "Katori"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "bartan"
+    },
+    {
+      "id": "spoon",
+      "names": {
+        "en": "Spoon",
+        "hi": "चम्मच",
+        "hinglish": "Chamach"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "bartan"
+    },
+    {
+      "id": "plate",
+      "names": {
+        "en": "Plate",
+        "hi": "प्लेट",
+        "hinglish": "Plate"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "bartan"
+    },
+    {
+      "id": "tray",
+      "names": {
+        "en": "Tray",
+        "hi": "ट्रे",
+        "hinglish": "Tray"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "bartan"
+    },
+    {
+      "id": "jug",
+      "names": {
+        "en": "Jug",
+        "hi": "जग",
+        "hinglish": "Jug"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "bartan"
+    },
+    {
+      "id": "gift-sets",
+      "names": {
+        "en": "Gift Sets",
+        "hi": "गिफ्ट सेट",
+        "hinglish": "Gift Sets"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "bartan"
+    },
+    {
+      "id": "drop-earrings",
+      "names": {
+        "en": "Drop Earrings",
+        "hi": "लटकन वाले ईयररिंग्स",
+        "hinglish": "Drop Earrings"
+      },
+      "metals": [
+        "silver"
+      ],
+      "group": "jewellery"
+    }
+  ],
+  "products": [
+    {
+      "id": "REF-G01",
+      "names": {
+        "en": "Hoop Earrings",
+        "hi": "बाली",
+        "hinglish": "Bali"
+      },
+      "metal": "gold",
+      "category": "bali",
+      "subcategory": {
+        "en": "Hoop Earrings",
+        "hi": "बाली",
+        "hinglish": "Bali"
+      },
+      "images": [
+        "assets/hero.jpg"
+      ],
+      "description": "A sculptural hoop design for everyday inspiration.",
+      "designTypes": [
+        "modern",
+        "daily"
+      ],
+      "gender": "women",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true
+    },
+    {
+      "id": "REF-G02",
+      "names": {
+        "en": "Necklace",
+        "hi": "हार",
+        "hinglish": "Haar"
+      },
+      "metal": "gold",
+      "category": "necklace",
+      "subcategory": {
+        "en": "Layered necklace",
+        "hi": "लेयर्ड हार",
+        "hinglish": "Layered Haar"
+      },
+      "images": [
+        "assets/necklace.jpg"
+      ],
+      "description": "A layered pendant necklace design for inspiration.",
+      "designTypes": [
+        "modern"
+      ],
+      "gender": "women",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true
+    },
+    {
+      "id": "REF-S01",
+      "names": {
+        "en": "Ring",
+        "hi": "अंगूठी",
+        "hinglish": "Anguthi"
+      },
+      "metal": "silver",
+      "category": "ring",
+      "subcategory": {
+        "en": "Solitaire style",
+        "hi": "सॉलिटेयर डिज़ाइन",
+        "hinglish": "Solitaire Design"
+      },
+      "images": [
+        "assets/ring.jpg"
+      ],
+      "description": "A silver-toned solitaire style ring design for inspiration.",
+      "designTypes": [
+        "modern"
+      ],
+      "gender": "women",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true
+    },
+    {
+      "id": "REF-S02",
+      "names": {
+        "en": "Drop Earrings",
+        "hi": "लटकन वाले ईयररिंग्स",
+        "hinglish": "Drop Earrings"
+      },
+      "metal": "silver",
+      "category": "drop-earrings",
+      "subcategory": {
+        "en": "Drop Earrings",
+        "hi": "लटकन वाले ईयररिंग्स",
+        "hinglish": "Drop Earrings"
+      },
+      "images": [
+        "assets/jewellery.jpg"
+      ],
+      "description": "A silver-toned statement earring design for inspiration.",
+      "designTypes": [
+        "designer"
+      ],
+      "gender": "women",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true
+    },
+    {
+      "id": "REF-G03",
+      "names": {
+        "en": "Earrings",
+        "hi": "झुमका",
+        "hinglish": "Jhumka"
+      },
+      "metal": "gold",
+      "category": "jhumka",
+      "subcategory": {
+        "en": "Traditional Jhumka",
+        "hi": "पारंपरिक झुमका",
+        "hinglish": "Traditional Jhumka"
+      },
+      "images": [
+        "assets/catalogue/gold-jhumka.jpg"
+      ],
+      "description": "A traditional jhumka design reference.",
+      "designTypes": [
+        "traditional"
+      ],
+      "gender": "",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true,
+      "credit": {
+        "title": "Gold Jhumka, dogra culture, Jammu",
+        "creator": "SpeakingArch",
+        "url": "https://commons.wikimedia.org/w/index.php?curid=192036542",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Resized; display may crop the image."
+      }
+    },
+    {
+      "id": "REF-G04",
+      "names": {
+        "en": "Bangle",
+        "hi": "चूड़ी",
+        "hinglish": "Chudi"
+      },
+      "metal": "gold",
+      "category": "chudi",
+      "subcategory": {
+        "en": "Decorative Bangle",
+        "hi": "सजावटी चूड़ी",
+        "hinglish": "Decorative Chudi"
+      },
+      "images": [
+        "assets/catalogue/gold-bangle.jpg"
+      ],
+      "description": "An embellished bangle design reference.",
+      "designTypes": [
+        "designer"
+      ],
+      "gender": "",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true,
+      "credit": {
+        "title": "Gold Bangles",
+        "creator": "spurekar",
+        "url": "https://www.flickr.com/photos/63324741@N04/51578201044",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Resized; display may crop the image."
+      }
+    },
+    {
+      "id": "REF-G05",
+      "names": {
+        "en": "Nose Ring",
+        "hi": "नथ",
+        "hinglish": "Nath"
+      },
+      "metal": "gold",
+      "category": "nath",
+      "subcategory": {
+        "en": "Traditional Nath",
+        "hi": "पारंपरिक नथ",
+        "hinglish": "Traditional Nath"
+      },
+      "images": [
+        "assets/catalogue/gold-nath.jpg"
+      ],
+      "description": "A traditional nose ring design reference.",
+      "designTypes": [
+        "traditional"
+      ],
+      "gender": "",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true,
+      "credit": {
+        "title": "Gold nose ring from Rajasthan",
+        "creator": "Neek-Theri",
+        "url": "https://commons.wikimedia.org/w/index.php?curid=130334133",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Resized; display may crop the image."
+      }
+    },
+    {
+      "id": "REF-G06",
+      "names": {
+        "en": "Pendant",
+        "hi": "लॉकेट",
+        "hinglish": "Locket"
+      },
+      "metal": "gold",
+      "category": "pendant",
+      "subcategory": {
+        "en": "Solitaire Pendant",
+        "hi": "सॉलिटेयर लॉकेट",
+        "hinglish": "Solitaire Locket"
+      },
+      "images": [
+        "assets/catalogue/gold-pendant.jpg"
+      ],
+      "description": "A solitaire-style pendant design reference.",
+      "designTypes": [
+        "modern"
+      ],
+      "gender": "",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true,
+      "credit": {
+        "title": "diamond solitaire pendant",
+        "creator": "paparutzi",
+        "url": "https://www.flickr.com/photos/28396605@N00/285865099",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Resized; display may crop the image."
+      }
+    },
+    {
+      "id": "REF-S03",
+      "names": {
+        "en": "Anklet",
+        "hi": "पायल",
+        "hinglish": "Payal"
+      },
+      "metal": "silver",
+      "category": "payal",
+      "subcategory": {
+        "en": "Decorative Anklet",
+        "hi": "सजावटी पायल",
+        "hinglish": "Decorative Payal"
+      },
+      "images": [
+        "assets/catalogue/silver-payal-b.jpg"
+      ],
+      "description": "A decorative anklet design reference.",
+      "designTypes": [
+        "traditional"
+      ],
+      "gender": "",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true,
+      "credit": {
+        "title": "Silver Anklet | வெள்ளி கொலுசு",
+        "creator": "wishvam",
+        "url": "https://www.flickr.com/photos/31285871@N03/7057134051",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Resized; display may crop the image."
+      }
+    },
+    {
+      "id": "REF-S04",
+      "names": {
+        "en": "Toe Ring",
+        "hi": "बिछिया",
+        "hinglish": "Bichhiya"
+      },
+      "metal": "silver",
+      "category": "bichhiya",
+      "subcategory": {
+        "en": "Coiled Toe Ring",
+        "hi": "घुमावदार बिछिया",
+        "hinglish": "Coiled Bichhiya"
+      },
+      "images": [
+        "assets/catalogue/silver-toe-ring.jpg"
+      ],
+      "description": "A coiled toe ring design reference.",
+      "designTypes": [
+        "traditional"
+      ],
+      "gender": "",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true,
+      "credit": {
+        "title": "Toe ring (silver)",
+        "creator": "Kavitha G. Kana",
+        "url": "https://commons.wikimedia.org/w/index.php?curid=88791565",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Resized; display may crop the image."
+      }
+    },
+    {
+      "id": "REF-S05",
+      "names": {
+        "en": "Lakshmi Ganesh Coin",
+        "hi": "लक्ष्मी गणेश सिक्का",
+        "hinglish": "Lakshmi Ganesh Coin"
+      },
+      "metal": "silver",
+      "category": "lakshmi-coin",
+      "subcategory": {
+        "en": "Lakshmi Ganesh Coin",
+        "hi": "लक्ष्मी गणेश सिक्का",
+        "hinglish": "Lakshmi Ganesh Coin"
+      },
+      "images": [
+        "assets/catalogue/silver-coin.jpg"
+      ],
+      "description": "A Lakshmi and Ganesh coin design reference.",
+      "designTypes": [],
+      "gender": "",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true,
+      "credit": {
+        "title": "A silver token coin of Hindu goddess and god Lakshmi and Ganesha",
+        "creator": "Billjones94",
+        "url": "https://commons.wikimedia.org/w/index.php?curid=128706079",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Resized; display may crop the image."
+      },
+      "additionalCategories": [
+        "ganesh-coin"
+      ]
+    },
+    {
+      "id": "REF-S06",
+      "names": {
+        "en": "Spoon",
+        "hi": "चम्मच",
+        "hinglish": "Chamach"
+      },
+      "metal": "silver",
+      "category": "spoon",
+      "subcategory": {
+        "en": "Silver Spoon",
+        "hi": "चांदी का चम्मच",
+        "hinglish": "Silver Chamach"
+      },
+      "images": [
+        "assets/catalogue/silver-spoon.jpg"
+      ],
+      "description": "A spoon design reference.",
+      "designTypes": [],
+      "gender": "",
+      "purity": "",
+      "weight": "",
+      "variations": [],
+      "published": true,
+      "referenceOnly": true,
+      "credit": {
+        "title": "Silver spoon",
+        "creator": "Mauro Cateb",
+        "url": "https://www.flickr.com/photos/69102917@N06/7486223074",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Resized; display may crop the image."
+      }
+    }
+  ]
+}
