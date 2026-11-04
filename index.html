@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="rates.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 
@@ -95,6 +96,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
       margin-bottom: 1rem;
     }
 
@@ -141,11 +144,16 @@
       font-family: 'Cinzel', serif;
     }
 
-    .rate-change {
+    .rates-note, .rates-status {
       font-size: 0.75rem;
-      color: #22c55e;
-      margin-top: 4px;
+      color: var(--text-muted);
     }
+
+    .rates-note { margin-top: 1rem; }
+    .rates-note a { color: var(--gold-light); }
+    .rate-card h4 { min-height: 2.7em; }
+    .rate-unit { color: var(--text-muted); font-size: 0.75rem; margin-top: 4px; }
+    .rates-section[data-state="error"] .live-dot { background: #f59e0b; box-shadow: none; animation: none; }
 
     /* HERO */
     .hero {
@@ -472,37 +480,36 @@
     </nav>
   </header>
 
-  <!-- LIVE BULLION RATE TICKER (SECOND TO SECOND) -->
-  <section class="rates-section" id="rates">
+  <!-- LIVE BULLION RATES -->
+  <section class="rates-section" id="rates" aria-labelledby="rates-title" data-state="loading">
     <div class="rates-header">
-      <div>
-        <span class="live-dot"></span>
-        <strong style="letter-spacing: 1px; font-size: 0.9rem;">MCX / BULLION TICK-BY-TICK LIVE RATES</strong>
-      </div>
-      <span style="font-size: 0.75rem; color: var(--text-muted);" id="clock">Updating...</span>
+      <h2 id="rates-title" style="letter-spacing: 1px; font-size: 0.9rem;"><span class="live-dot" aria-hidden="true"></span> GOLD &amp; SILVER MARKET RATES</h2>
+      <span class="rates-status" id="rates-status" role="status">Loading market rates…</span>
     </div>
     <div class="rates-grid">
       <div class="rate-card">
-        <h4>Gold 24K (99.9% Pure) / 10g</h4>
-        <div class="rate-val" id="rate-gold-24k">₹76,450</div>
-        <div class="rate-change" id="chg-gold-24k">▲ +0.02% (Live tick)</div>
+        <h4>Gold 24K</h4>
+        <div class="rate-val" id="rate-gold-24k">—</div>
+        <div class="rate-unit">Estimated value / 10g</div>
       </div>
       <div class="rate-card">
-        <h4>Gold 22K (91.6% BIS Hallmark) / 10g</h4>
-        <div class="rate-val" id="rate-gold-22k">₹70,080</div>
-        <div class="rate-change" id="chg-gold-22k">▲ +0.02% (Live tick)</div>
+        <h4>Gold 22K</h4>
+        <div class="rate-val" id="rate-gold-22k">—</div>
+        <div class="rate-unit">Estimated value / 10g</div>
       </div>
       <div class="rate-card">
-        <h4>Silver 999 (Pure) / 1 Kg</h4>
-        <div class="rate-val" id="rate-silver-kg">₹91,200</div>
-        <div class="rate-change" id="chg-silver-kg">▼ -0.01% (Live tick)</div>
+        <h4>Silver 999</h4>
+        <div class="rate-val" id="rate-silver-kg">—</div>
+        <div class="rate-unit">Estimated value / 1 kg</div>
       </div>
       <div class="rate-card">
-        <h4>Silver 999 / 10g</h4>
-        <div class="rate-val" id="rate-silver-10g">₹912</div>
-        <div class="rate-change" id="chg-silver-10g">● Stable</div>
+        <h4>Silver 999</h4>
+        <div class="rate-val" id="rate-silver-10g">—</div>
+        <div class="rate-unit">Estimated value / 10g</div>
       </div>
     </div>
+    <p class="rates-note">Indicative international spot prices converted to INR; 22K is calculated at 22/24 purity. Local prices, taxes and making charges may differ. Metal prices: <a href="https://gold-api.com/">Gold API</a>. Currency conversion: <a href="https://www.exchangerate-api.com">ExchangeRate-API</a> (updated daily).</p>
+    <noscript><p class="rates-note">Enable JavaScript to see market rates.</p></noscript>
   </section>
 
   <!-- HERO -->
