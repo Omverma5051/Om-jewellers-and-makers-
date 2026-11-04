@@ -1,64 +1,53 @@
 (() => {
   const section = document.getElementById('rates');
   const status = document.getElementById('rates-status');
-  const fields = {
-    gold24: document.getElementById('rate-gold-24k'),
-    gold22: document.getElementById('rate-gold-22k'),
-    silverKg: document.getElementById('rate-silver-kg'),
-    silver10: document.getElementById('rate-silver-10g')
-  };
-  const formatPrice = new Intl.NumberFormat('en-IN', {
-    style: 'currency', currency: 'INR', maximumFractionDigits: 2
-  });
-  const formatTime = date => new Intl.DateTimeFormat('en-IN', {
-    dateStyle: 'medium', timeStyle: 'short', timeZone: 'Asia/Kolkata'
-  }).format(date) + ' IST';
-  let lastUpdate = null;
+  const fields = ['rate-gold-24k', 'rate-gold-22k', 'rate-silver-kg', 'rate-silver-10g'].map(id => document.getElementById(id));
+  const priceFormat = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 2 });
+  const timeFormat = new Intl.DateTimeFormat('en-IN', { dateStyle: 'medium', timeStyle: 'medium', timeZone: 'Asia/Kolkata' });
+  let exchange = null;
+  let exchangeFetchedAt = 0;
+  let lastUpdate = '';
 
   async function getJson(url, signal) {
     const response = await fetch(url, { signal, cache: 'no-cache' });
     if (!response.ok) throw new Error('Rate request failed');
     return response.json();
   }
+  const validNumber = value => Number.isFinite(value) && value > 0;
+  const time = value => `${timeFormat.format(value)} IST`;
 
   async function updateRates() {
+    if (document.hidden) { setTimeout(updateRates, 1000); return; }
+    const startedAt = Date.now();
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 10000);
     try {
-      const [gold, silver, exchange] = await Promise.all([
+      const fxRequest = !exchange || Date.now() - exchangeFetchedAt >= 3600000
+        ? getJson('https://open.er-api.com/v6/latest/USD', controller.signal)
+        : Promise.resolve(exchange);
+      const [gold, silver, fx] = await Promise.all([
         getJson('https://api.gold-api.com/price/XAU', controller.signal),
-        getJson('https://api.gold-api.com/price/XAG', controller.signal),
-        getJson('https://open.er-api.com/v6/latest/USD', controller.signal)
+        getJson('https://api.gold-api.com/price/XAG', controller.signal), fxRequest
       ]);
-      const goldTime = Date.parse(gold.updatedAt);
-      const silverTime = Date.parse(silver.updatedAt);
-      const fxTime = exchange.time_last_update_unix * 1000;
-      const inr = exchange.rates?.INR;
-      if (gold.symbol !== 'XAU' || silver.symbol !== 'XAG' || gold.currency !== 'USD' || silver.currency !== 'USD' || exchange.result !== 'success' || exchange.base_code !== 'USD' ||
-          ![gold.price, silver.price, inr, goldTime, silverTime, fxTime].every(value => Number.isFinite(value) && value > 0)) {
-        throw new Error('Invalid rate data');
-      }
-      // The metal feed quotes USD per troy ounce (31.1034768 grams).
-      const goldPerGram = gold.price * inr / 31.1034768;
-      const silverPerGram = silver.price * inr / 31.1034768;
-      fields.gold24.textContent = formatPrice.format(goldPerGram * 10);
-      fields.gold22.textContent = formatPrice.format(goldPerGram * 10 * 22 / 24);
-      fields.silverKg.textContent = formatPrice.format(silverPerGram * 1000);
-      fields.silver10.textContent = formatPrice.format(silverPerGram * 10);
-      lastUpdate = `Gold: ${formatTime(goldTime)} · Silver: ${formatTime(silverTime)} · USD/INR: ${formatTime(fxTime)}`;
+      const goldTime = Date.parse(gold.updatedAt), silverTime = Date.parse(silver.updatedAt);
+      const fxTime = fx.time_last_update_unix * 1000, inr = fx.rates?.INR;
+      if (gold.symbol !== 'XAU' || silver.symbol !== 'XAG' || gold.currency !== 'USD' || silver.currency !== 'USD' || fx.result !== 'success' || fx.base_code !== 'USD' || ![gold.price, silver.price, inr, goldTime, silverTime, fxTime].every(validNumber)) throw new Error('Invalid rate data');
+      if (fx !== exchange) { exchange = fx; exchangeFetchedAt = Date.now(); }
+      // USD spot prices per troy ounce are estimates, converted to INR and include 3% GST.
+      const goldGram = gold.price * inr / 31.1034768 * 1.03;
+      const silverGram = silver.price * inr / 31.1034768 * 1.03;
+      [goldGram * 10, goldGram * 10 * 22 / 24, silverGram * 1000, silverGram * 10].forEach((value, index) => { fields[index].textContent = priceFormat.format(value); });
+      lastUpdate = `Gold: ${time(goldTime)} · Silver: ${time(silverTime)} · USD/INR: ${time(fxTime)}`;
       status.textContent = lastUpdate;
       section.dataset.state = 'ready';
     } catch (error) {
       controller.abort();
       section.dataset.state = 'error';
-      status.textContent = lastUpdate
-        ? `Unable to refresh. Last available rates — ${lastUpdate}`
-        : 'Rates are currently unavailable. Retrying shortly.';
+      status.textContent = lastUpdate ? `Unable to refresh. Last available rates — ${lastUpdate}` : 'Rates are currently unavailable. Retrying shortly.';
     } finally {
       clearTimeout(timeout);
-      setTimeout(updateRates, 60000);
+      setTimeout(updateRates, Math.max(0, 1000 - (Date.now() - startedAt)));
     }
   }
-
   updateRates();
 })();
