@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the gold and silver jewellery catalogue at Om Jewellers & Makers.">
+  <title>Jewellery Collection | Om Jewellers & Makers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="catalogue/catalogue.css">
+  <script src="catalogue/catalogue.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A LITTLE LUXURY FOR EVERY CHAPTER <span>✦</span> CRAFTED TO BE TREASURED</div>
+  <header class="header">
+    <a class="logo" href="index.html#home" aria-label="Om Jewellers and Makers home"><span class="logo-mark">ॐ</span><span>OM <small>JEWELLERS & MAKERS</small></span></a>
+    <nav aria-label="Main navigation"><a href="catalogue.html" aria-current="page">Jewellery Collection</a><a href="index.html#collection">Collections</a><a href="index.html#experience">The experience</a><a href="index.html#rates">Live rates</a><a href="index.html#story">Our story</a></nav>
+  </header>
+  <main>
+    <section class="catalogue-hero"><div class="eyebrow"><span class="line"></span> THE OM COLLECTION</div><h1>Find something <em>meaningful.</em></h1><p>Explore jewellery inspired by tradition, made for every story.</p></section>
+    <section class="catalogue-shell" id="catalogue-app" aria-label="Jewellery catalogue">
+      <div class="catalogue-toolbar"><div><span class="eyebrow">EXPLORE BY METAL</span><h2>Jewellery Collection</h2></div><label class="language-label" for="language">Product language<select id="language"><option value="en">English</option><option value="hi">हिन्दी (Hindi)</option><option value="hinglish">Hinglish</option></select></label></div>
+      <div class="metal-tabs" role="group" aria-label="Choose collection"><button type="button" data-collection="gold" aria-pressed="true">✦ &nbsp; Gold Jewellery</button><button type="button" data-collection="silver" aria-pressed="false">✧ &nbsp; Silver Jewellery</button></div>
+      <div id="catalogue-content"><p>Loading collection…</p></div>
+      <div id="product-detail" hidden></div>
+    </section>
+  </main>
+  <footer><a class="logo footer-logo" href="index.html#home"><span class="logo-mark">ॐ</span><span>OM <small>JEWELLERS & MAKERS</small></span></a><p>Made to be treasured, today and always.</p><div><a href="index.html#rates">Live rates</a><a href="index.html#story">Our story</a></div><small>© Om Jewellers & Makers</small></footer>
+</body>
+</html>
